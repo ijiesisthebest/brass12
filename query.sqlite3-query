@@ -1,0 +1,19 @@
+-- database: ./database.db
+
+SELECT * FROM Model;
+
+INSERT INTO Model(Model_name,Price) VALUES('YTR-2330',900);
+INSERT INTO Model(Model_name, Price) VALUES('YTR-4335GII', 1500);
+INSERT INTO Model(Model_name, Price) VALUES('TR300H2', 650);
+INSERT INTO Model(Model_name, Price) VALUES('180S37', 3500);
+INSERT INTO Model(Model_name, Price) VALUES('52BSP', 1200);
+INSERT INTO Model(Model_name, Price) VALUES('YHR-314II', 1800);
+INSERT INTO Model(Model_name, Price) VALUES('8D', 4200);
+INSERT INTO Model(Model_name, Price) VALUES('H179', 4000);
+INSERT INTO Model(Model_name, Price) VALUES('103', 5000);
+INSERT INTO Model(Model_name, Price) VALUES('1103', 5200);
+INSERT INTO Model(Model_name, Price) VALUES('YSL-354', 900);
+INSERT INTO Model(Model_name, Price) VALUES('42BO', 3200);
+INSERT INTO Model(Model_name, Price) VALUES('606', 1100);
+INSERT INTO Model(Model_name, Price) VALUES('1236', 2800);
+INSERT INTO Model(Model_name, Price) VALUES('1047F', 3000);

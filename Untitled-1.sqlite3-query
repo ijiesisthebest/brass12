@@ -1,0 +1,30 @@
+-- database: ./database.db
+
+SELECT * FROM Brand;
+INSERT INTO Model(Model_name, Price) VALUES('YSL-354', 900);
+INSERT INTO Model(Model_name, Price) VALUES('42BO', 3200);
+INSERT INTO Model(Model_name, Price) VALUES('606', 1100);
+INSERT INTO Model(Model_name, Price) VALUES('1236', 2800);
+INSERT INTO Model(Model_name, Price) VALUES('1047F', 3000);
+INSERT INTO Model(Model_name, Price) VALUES('YEP-201', 1200);
+INSERT INTO Model(Model_name, Price) VALUES('YEP-642II', 6500);
+INSERT INTO Model(Model_name, Price) VALUES('BE165', 7000);
+INSERT INTO Model(Model_name, Price) VALUES('1270', 5000);
+INSERT INTO Model(Model_name, Price) VALUES('M5050', 5500);
+INSERT INTO Model(Model_name, Price) VALUES('FL701', 1100);
+INSERT INTO Model(Model_name, Price) VALUES('FH-650', 1200);
+INSERT INTO Model(Model_name, Price) VALUES('FH600', 900);
+INSERT INTO Model(Model_name, Price) VALUES('1830S', 2600);
+INSERT INTO Model(Model_name, Price) VALUES('FH2000', 2700);
+INSERT INTO Model(Model_name, Price) VALUES('YBB-105', 2500);
+INSERT INTO Model(Model_name, Price) VALUES('BE982', 6000);
+INSERT INTO Model(Model_name, Price) VALUES('BBb-210', 1800);
+INSERT INTO Model(Model_name, Price) VALUES('186', 8500);
+INSERT INTO Model(Model_name, Price) VALUES('TU105', 1600);
+
+
+SELECT Brand.Brand_Name, Model.Model_name, Model.Price  -- show brand, model, price
+FROM Model
+JOIN Brand ON Brand.Brand_ID = Model.Brand_ID
+JOIN Instrument ON Instrument.Instrument_ID = Model.Instrument_ID
+WHERE Instrument.Name = 'Trumpet';  -- only show trumpets

@@ -28,3 +28,11 @@ FROM Model
 JOIN Brand ON Brand.Brand_ID = Model.Brand_ID
 JOIN Instrument ON Instrument.Instrument_ID = Model.Instrument_ID
 WHERE Instrument.Name = 'Trumpet';  -- only show trumpets
+
+SELECT Model.Model_ID, Brand.Brand_Name, Model.Model_name, Model.Image
+FROM Model
+JOIN Brand ON Brand.Brand_ID = Model.Brand_ID;
+
+SELECT * FROM Model
+JOIN Brand On Brand.Brand_ID = Model.Brand_ID
+WHERE Model.ModelID = 2;

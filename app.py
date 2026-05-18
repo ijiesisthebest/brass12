@@ -32,11 +32,13 @@ def query_db(query, args=(), one=False):
 def home():
     # home page
     sql = """
-                SELECT Model.Model_ID, Brand.Brand_Name, Model.Model_name, Model.Image
+                SELECT Model.Model_ID, Brand.Brand_Name,
+                Model.Model_name, Model.Image
                 FROM Model
-                JOIN Brand ON Brand.Brand_ID = Model.Brand_ID;""" 
+                JOIN Brand ON Brand.Brand_ID = Model.Brand_ID;"""
     results = query_db(sql)
     return str(results)
+
 
 @app.route("/instrument/<int:id>")
 def instrument(id):
@@ -45,7 +47,7 @@ def instrument(id):
     JOIN Brand ON Brand.Brand_ID = Model.Brand_ID
     JOIN Instrument ON Instrument.Instrument_ID = Model.Instrument_ID
     WHERE Model.Model_ID = ?;"""
-    result = query_db(sql,(id,),True)
+    result = query_db(sql, (id,), True)
     return str(result)
 
 

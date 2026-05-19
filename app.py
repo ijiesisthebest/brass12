@@ -1,6 +1,7 @@
-from flask import Flask, g
+from flask import Flask, g, render_template
 import sqlite3
 
+# define path for database
 DATABASE = 'database.db'
 
 # initialise app
@@ -25,6 +26,7 @@ def query_db(query, args=(), one=False):
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
+    # Returns a single row if one is right
     return (rv[0] if rv else None) if one else rv
 
 
@@ -37,7 +39,7 @@ def home():
                 FROM Model
                 JOIN Brand ON Brand.Brand_ID = Model.Brand_ID;"""
     results = query_db(sql)
-    return str(results)
+    return render_template("layout.html", results=results)
 
 
 @app.route("/instrument/<int:id>")

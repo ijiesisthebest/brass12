@@ -32,14 +32,13 @@ def query_db(query, args=(), one=False):
 
 @app.route('/')
 def home():
-    # home page
+    # home page for instruments
     sql = """
-                SELECT Model.Model_ID, Brand.Brand_Name,
-                Model.Model_name, Model.Image
-                FROM Model
-                JOIN Brand ON Brand.Brand_ID = Model.Brand_ID;"""
+          SELECT Instrument_ID, Name, Image 
+          FROM Instrument;
+          """
     results = query_db(sql)
-    return render_template("layout.html", results=results)
+    return render_template("home.html", results=results)
 
 
 @app.route("/instrument/<int:id>")

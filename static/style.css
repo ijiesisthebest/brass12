@@ -1,1 +1,13 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: serif, sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: serif, sans-serif;
+}
+
+.two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+img{
+    width: 100%;
+}

@@ -34,7 +34,7 @@ def query_db(query, args=(), one=False):
 def home():
     # home page for instruments
     sql = """
-          SELECT Instrument_ID, Name, Image 
+          SELECT Instrument_ID, Name, Image
           FROM Instrument;
           """
     results = query_db(sql)

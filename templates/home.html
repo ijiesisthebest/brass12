@@ -4,9 +4,10 @@
 <!-- 2 column-->
     <div class ="two-column">
         {% for instrument in results %}
-        <div class="w3-card-4">
+        <div class="w3-card-2">
             <!-- name and image -->
              <h1>{{ instrument[1] }}</h1>
+             <img src="{{ instrument[2] }}">
         </div>
         {% endfor %}
     </div>

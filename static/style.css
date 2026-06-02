@@ -4,10 +4,10 @@ body,h1,h2,h3,h4,h5,h6 {
 
 .two-column{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     gap: 2em;
 }
 
 img{
-    width: 100%;
+    width: 40%;
 }

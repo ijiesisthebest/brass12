@@ -11,3 +11,64 @@ body,h1,h2,h3,h4,h5,h6 {
 img{
     width: 40%;
 }
+
+.instrument-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 120px;
+    justify-content: center; /* centres the columns */
+    padding: 20px;
+}
+
+.instrument-card {
+    background: white;
+    border: 5px solid #ddd;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 500px;
+    height: 500px;
+}
+
+.instrument-card img {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.page-layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    min-height: 100vh;
+    background: rgb(99, 99, 99);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+
+
+}
+
+.sidebar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 40px;
+    text-align: left;
+}
+
+.content {
+    flex: 1;
+}
+
+.sidebar .w3-button {
+    font-size: 28px; /* Adjustable */
+}

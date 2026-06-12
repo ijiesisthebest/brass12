@@ -2,15 +2,15 @@
 {% block body %}
 <!--home page goes here-->
 <!-- 2 column-->
-    <div class ="two-column">
+    <div class ="instrument-grid">
         {% for instrument in results %}
-        <div class="w3-card-2">
+        <div class="instrument-card">
             <!-- name and image -->
              <h1>{{ instrument[1] }}</h1>
              <img src="{{ instrument[2] }}">
         </div>
         {% endfor %}
     </div>
-    {% for instrument in reuslts %}
+    {% for instrument in results %}
     {% endfor %}
 {% endblock %}

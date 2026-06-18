@@ -21,8 +21,8 @@ img{
 }
 
 .instrument-card {
-    background: white;
-    border: 5px solid #ddd;
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(119, 119, 119);
     padding: 15px;
 
     display: flex;
@@ -47,15 +47,17 @@ img{
 .sidebar {
     width: 300px;
     min-height: 100vh;
-    background: rgb(99, 99, 99);
+    background: #19323c;
 
     display: flex;
     flex-direction: column;
 }
 
 .title {
-
-
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    font-size: 40px;
+    text-align: left;
 }
 
 .sidebar a {

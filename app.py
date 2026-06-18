@@ -44,10 +44,12 @@ def home():
 @app.route("/instrument/<int:id>")
 def instrument(id):
     # just one instrument model based on id
-    sql = """SELECT * FROM Model
+    sql = """
+    SELECT * FROM Model
     JOIN Brand ON Brand.Brand_ID = Model.Brand_ID
     JOIN Instrument ON Instrument.Instrument_ID = Model.Instrument_ID
-    WHERE Model.Model_ID = ?;"""
+    WHERE Instrument.Instrument_ID = ?;
+    """
     result = query_db(sql, (id,), True)
     return str(result)
 

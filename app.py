@@ -50,7 +50,7 @@ def instrument(id):
     JOIN Instrument ON Instrument.Instrument_ID = Model.Instrument_ID
     WHERE Instrument.Instrument_ID = ?;
     """
-    result = query_db(sql, (id,), True)
+    result = query_db(sql, (id,))
     return str(result)
 
 

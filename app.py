@@ -51,7 +51,9 @@ def instrument(id):
     WHERE Instrument.Instrument_ID = ?;
     """
     result = query_db(sql, (id,))
-    return str(result)
+    return render_template(
+        "instrument.html",
+        results=result)
 
 
 if __name__ == "__main__":

@@ -51,9 +51,18 @@ def instrument(id):
     WHERE Instrument.Instrument_ID = ?;
     """
     result = query_db(sql, (id,))
-    return render_template(
-        "instrument.html",
-        results=result)
+    return render_template("instrument.html", results=result)
+
+
+@app.route("/model/<int:id>")
+def model(id):
+    sql = """
+    SELECT *
+    FROM Model
+    WHERE Model_ID = ?;
+    """
+    result = query_db(sql, (id,), one=True)
+    return render_template("model.html", result=result)
 
 
 if __name__ == "__main__":

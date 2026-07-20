@@ -43,9 +43,14 @@ def home():
 
 @app.route("/instrument/<int:id>")
 def instrument(id):
-    # just one instrument model based on id
     sql = """
-    SELECT * FROM Model
+    SELECT
+        Model.Model_ID,
+        Brand.Brand_Name,
+        Model.Model_name,
+        Model.Price,
+        Model.Image
+    FROM Model
     JOIN Brand ON Brand.Brand_ID = Model.Brand_ID
     JOIN Instrument ON Instrument.Instrument_ID = Model.Instrument_ID
     WHERE Instrument.Instrument_ID = ?;
@@ -57,9 +62,21 @@ def instrument(id):
 @app.route("/model/<int:id>")
 def model(id):
     sql = """
-    SELECT *
+    SELECT
+        Model.Model_ID,
+        Instrument.Name,
+        Brand.Brand_Name,
+        Model.Model_name,
+        Model.Price,
+        Model.Image,
+        Model.Description,
+        Brand.Country
     FROM Model
-    WHERE Model_ID = ?;
+    JOIN Brand
+        ON Model.Brand_ID = Brand.Brand_ID
+    JOIN Instrument
+        ON Model.Instrument_ID = Instrument.Instrument_ID
+    WHERE Model.Model_ID = ?;
     """
     result = query_db(sql, (id,), one=True)
     return render_template("model.html", result=result)

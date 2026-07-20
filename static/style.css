@@ -2,12 +2,6 @@ body,h1,h2,h3,h4,h5,h6 {
     font-family: serif, sans-serif;
 }
 
-.two-column{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 2em;
-}
-
 img{
     width: 40%;
 }
@@ -73,4 +67,33 @@ img{
 
 .sidebar .w3-button {
     font-size: 28px; /* Adjustable */
+}
+
+.instrument {
+    width: 80%;
+    margin: auto;
+}
+
+.instrument h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.instrument-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.instrument-image img {
+    width: 700px;
+    height: auto;
+}
+
+.instrument-details {
+    flex: 1;
+}
+
+.instrument-details h2 {
+    margin-top: 0;
 }

@@ -1,15 +1,14 @@
+<!-- This is for the second page to where you can choose specific models-->
 {% extends "layout.html" %}
 {% block body %}
-
 <div class="instrument-grid">
     {% for model in results %}
     <a href="{{ url_for('model', id=model[0]) }}">
         <div class="instrument-card">
-            <h1>{{ model[3] }}</h1>
-            <img src="{{ model[5] }}" alt="{{ model[3] }}">
+            <h1>{{ model[1] }} / {{ model[2] }}</h1>
+            <img src="{{ model[4] }}" alt="{{ model[3] }}">
         </div>
     </a>
     {% endfor %}
 </div>
-
 {% endblock %}

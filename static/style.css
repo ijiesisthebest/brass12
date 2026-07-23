@@ -97,3 +97,31 @@ img{
 .instrument-details h2 {
     margin-top: 0;
 }
+
+.instrument-details{
+    background: #303030;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.detail{
+    padding: 18px 25px;
+    border-bottom: 3px solid #000000;
+}
+
+.detail:last-child{
+    border-bottom: none;
+}
+
+.detail h2{
+    margin: 0;
+    color: white;
+    font-size: 22px;
+}
+
+.detail p{
+    margin: 8px 0 0;
+    color: #dfdfdf;
+    font-size: 18px;
+    line-height: 1.5;
+}

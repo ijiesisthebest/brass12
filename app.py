@@ -82,5 +82,10 @@ def model(id):
     return render_template("model.html", result=result)
 
 
+@app.route("/whybrass")
+def whybrass():
+    return render_template("whybrass.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

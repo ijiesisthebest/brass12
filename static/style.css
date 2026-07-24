@@ -125,3 +125,71 @@ img{
     font-size: 18px;
     line-height: 1.5;
 }
+
+/* to make text more align for the why brass?*/
+.why-layout{
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:1fr 220px;
+    gap:200px;
+}
+
+/* gap between text*/
+.why-content{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+/* column to make image on right and text on left*/
+.why-section{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+/* Images */
+.media img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+/* Cards */
+.brass-reasons{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.reason-card{
+    padding:20px;
+    border-radius:12px;
+    background:#f7f7f7;
+}
+
+
+/* Sidebar for the why brass */
+.sidebars{
+    top:100px;
+    height:fit-content;
+
+    padding-left:20px;
+    border-left:3px solid #7c7c7c;
+}
+
+/* Make them individual rather than together*/
+.sidebars a{
+    display:block;
+    text-decoration:none;
+    color:#444;
+    margin:12px 0;
+}
+
+/* color when hover */
+.sidebars a:hover{
+    color:#008bb6;
+}

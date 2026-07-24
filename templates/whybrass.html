@@ -1,61 +1,94 @@
-<!-- this page is for the why brass -->
 {% extends "layout.html" %}
 {% block body %}
-<div class="why-brass">
-    <h1>Why Brass?</h1>
-    <p>
-        Brass instruments are some of the most powerful and expressive instruments
-        in the world of music. From the bright sound of the trumpet to the deep
-        voice of the tuba, brass instruments can create a wide range of emotions
-        and colours.
-    </p>
+<div class="why-layout">
+    <!-- LEFT + MIDDLE -->
+    <div class="why-content">
+        <!-- Introduction -->
+        <section id="intro" class="why-section">
+            <div class="text">
+                <h1>Why Brass?</h1>
+                <p>
+                    Brass instruments are some of the most powerful and expressive
+                    instruments in the world of music. From the bright sound of the
+                    trumpet to the deep voice of the tuba, brass instruments can
+                    create a huge range of emotions and colours.
+                </p>
+            </div>
 
-    <h1>What are brass instruments?</h1>
-    <p>
-        Brass instruments create sound when a player vibrates their lips against
-        a mouthpiece. This vibration travels through the instrument's tubing,
-        producing different pitches. Valves or slides are used to change the
-        length of the tubing and control the notes played.
-    </p>
+            <div class="media">
+                <img src="" alt="Instruments">
+            </div>
+        </section>
 
-    <h1>Why play a brass instrument?</h1>
-    <div class="brass-reasons">
-        <div class="reason-card">
-            <h2>Powerful Sound</h2>
-            <p>
-                Brass instruments can produce strong, energetic sounds that can
-                fill large concert halls and outdoor spaces.
-            </p>
-        </div>
+        <!-- What are Brass -->
+        <section id="what" class="why-section">
+            <div class="text">
+                <h1>What are Brass Instruments?</h1>
+                <p>
+                    Brass instruments create sound when the player's lips vibrate
+                    against the mouthpiece. The vibration travels through the tubing,
+                    producing different notes.
+                </p>
+            </div>
+            <div class="media">
 
-        <div class="reason-card">
-            <h2>Expressive Playing</h2>
-            <p>
-                Brass players can create many different moods through changes in
-                tone, dynamics, and articulation.
-            </p>
-        </div>
+                <img src="" alt="Instruments">
 
-        <div class="reason-card">
-            <h2>Musical Opportunities</h2>
-            <p>
-                Brass instruments are used in orchestras, jazz bands, concert
-                bands, marching bands, and many other ensembles.
-            </p>
-        </div>
+            </div>
+        </section>
+
+        <!-- Why Play -->
+        <section id="play" class="why-section">
+            <div class="text">
+                <h1>Why Play a Brass Instrument?</h1>
+                <div class="brass-reasons">
+                    <div class="reason-card">
+                        <h2>Powerful Sound</h2>
+                        <p>Fill concert halls with rich, exciting music.</p>
+                    </div>
+                    <div class="reason-card">
+                        <h2>Expressive Playing</h2>
+                        <p>Create many different moods and emotions.</p>
+                    </div>
+                    <div class="reason-card">
+                        <h2>Musical Opportunities</h2>
+                        <p>Play in orchestras, jazz bands and concert bands.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <img src="" alt="Instruments">
+            </div>
+        </section>
+
+        <!-- Journey -->
+        <section id="journey" class="why-section">
+            <div class="text">
+                <h1>Start Your Brass Journey</h1>
+                <p>
+                    Whether you're interested in classical music, jazz,
+                    film scores or marching bands, there's a brass
+                    instrument for everyone.
+                </p>
+            </div>
+            <div class="media">
+                <img src="" alt="Instruments">
+            </div>
+        </section>
     </div>
 
-    <h1>Brass Across Music</h1>
-    <p>
-        Brass instruments have played an important role throughout music history.
-        They are used in classical works by composers such as Mozart and Mahler,
-        as well as modern genres including jazz, pop, and film music.
-    </p>
+    <!-- RIGHT SIDEBAR -->
+    <aside class="sidebars">
 
-    <h1>Start Your Brass Journey</h1>
-    <p>
-        Whether you want to play melodies, create powerful harmonies, or be part
-        of an ensemble, brass instruments offer a rewarding musical experience.
-    </p>
+        <h2>Quick Search</h2>
+
+        <a href="#intro">Introduction</a>
+        <a href="#what">What are Brass?</a>
+        <a href="#play">Why Play?</a>
+        <a href="#journey">Start Your Journey</a>
+
+    </aside>
+
 </div>
+
 {% endblock %}

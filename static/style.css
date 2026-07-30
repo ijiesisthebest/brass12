@@ -38,7 +38,7 @@ img{
     display: flex;
 }
 
-.sidebar {
+.navbar {
     width: 300px;
     min-height: 100vh;
     background: #19323c;
@@ -50,11 +50,11 @@ img{
 .title {
     color: rgb(255, 255, 255);
     padding: 30px;
-    font-size: 40px;
-    text-align: left;
+    font-size: 50px;
+    text-align: center;
 }
 
-.sidebar a {
+.navbar a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 40px;
@@ -65,8 +65,8 @@ img{
     flex: 1;
 }
 
-.sidebar .w3-button {
-    font-size: 28px; /* Adjustable */
+.navbar .w3-button {
+    font-size: 28px; 
 }
 
 .instrument {
@@ -90,35 +90,31 @@ img{
     height: auto;
 }
 
-.instrument-details {
-    flex: 1;
-}
-
-.instrument-details h2 {
-    margin-top: 0;
-}
-
+/* for the last page */
 .instrument-details{
     background: #303030;
     border-radius: 12px;
-    overflow: hidden;
 }
 
+/* lines between each setion for last page */
 .detail{
     padding: 18px 25px;
     border-bottom: 3px solid #000000;
 }
 
+/* no gap line at the bottom of last page */
 .detail:last-child{
     border-bottom: none;
 }
 
+/* text for the tiny headings */
 .detail h2{
     margin: 0;
     color: white;
     font-size: 22px;
 }
 
+/* text for the text */
 .detail p{
     margin: 8px 0 0;
     color: #dfdfdf;
@@ -144,27 +140,28 @@ img{
 }
 
 /* column to make image on right and text on left*/
-.why-section{
+.text-section{
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:40px;
     align-items:center;
 }
 
-/* Images */
-.media img{
-    width:100%;
+/* images */
+.brassimg img{
+    width:130%;
     border-radius:12px;
     display:block;
 }
 
-/* Cards */
+/* cards */
 .brass-reasons{
     display:flex;
     flex-direction:column;
     gap:20px;
 }
 
+/* cards for the text appearance */
 .reason-card{
     padding:20px;
     border-radius:12px;
@@ -173,7 +170,8 @@ img{
 
 
 /* Sidebar for the why brass */
-.sidebars{
+.quick-search{
+    position: sticky;
     top:100px;
     height:fit-content;
 
@@ -182,7 +180,7 @@ img{
 }
 
 /* Make them individual rather than together*/
-.sidebars a{
+.quick-search a{
     display:block;
     text-decoration:none;
     color:#444;
@@ -190,6 +188,23 @@ img{
 }
 
 /* color when hover */
-.sidebars a:hover{
+.quick-search a:hover{
     color:#008bb6;
+}
+
+.back-button{
+    position: relative;
+    top: 50px;      /* moves the button down */
+    left: 20px;
+    display: inline-block;
+    padding: 10px 18px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+.back-button:hover{
+    background:#555;
 }

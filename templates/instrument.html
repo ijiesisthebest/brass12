@@ -1,6 +1,7 @@
 <!-- This is for the second page to where you can choose specific models-->
 {% extends "layout.html" %}
 {% block body %}
+<a href="javascript:history.back()" class="back-button"> Back</a>
 <div class="instrument-grid">
     {% for model in results %}
     <a href="{{ url_for('model', id=model[0]) }}">

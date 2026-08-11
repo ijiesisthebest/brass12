@@ -217,3 +217,68 @@ img{
 .back-button:hover{
     background:#555;
 }
+
+.care-page{
+    width:90%;
+    margin:auto;
+}
+
+.care-page h1{
+    text-align:center;
+    font-size:50px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.care-search{
+    display:flex;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
+.care-search input{
+    width:450px;
+    padding:12px;
+    font-size:16px;
+}
+
+.care-search button{
+    padding:12px 18px;
+}
+
+.care-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.care-card{
+    text-align: center;
+    background:white;
+    border:2px solid #ccc;
+    border-radius:10px;
+    padding:20px;
+}
+
+.care-card img{
+    width:50%;
+    height:170px;
+    object-fit:cover;
+    margin:15px 0;
+    align-items: center;
+}
+
+.care-card h2{
+    margin-top:0;
+}
+
+.care-card ul{
+    padding-left:20px;
+}
+
+.care-card li{
+    margin-bottom:8px;
+}

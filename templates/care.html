@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="care-page">
+    <h1>Care &amp; Maintenance</h1>
+    <p class="subtitle">
+        Essential Guide to Brass Instrument Upkeep
+    </p>
+
+
+    <div class="care-grid">
+
+
+        <!-- General Care -->
+        <div class="care-card">
+            <h2> General Care</h2>
+            <img src="{{ url_for('static', filename='valve oil.jpg') }}"
+                 alt="General brass instrument care">
+            <h3>Routine Cleaning</h3>
+            <ul>
+                <p>Wipe fingerprints from the surface of your instrument after every practice session to prevent dirt, oil, and fingerprints from building up and affecting the instruments appearance.</p>
+                <p>Empty any moisture from inside the instrument after playing, as leaving moisture inside for long periods can cause corrosion and other problems.</p>
+                <p>Use a soft, clean polishing cloth to gently remove fingerprints, dust, and marks without scratching or damaging the finish of the instrument.</p>
+            </ul>
+            <h3>Handling</h3>
+            <ul>
+                <p>Always carry your instrument carefully inside its protective case when travelling or moving between rooms to reduce the risk of accidental damage.</p>
+                <p>Never place your instrument directly on the floor because it can easily be stepped on, knocked over, or exposed to dirt and moisture.</p>
+            </ul>
+        </div>
+
+
+        <!-- Lubrication -->
+        <div class="care-card">
+            <h2> Lubrication Guide</h2>
+            <img src="{{ url_for('static', filename='valve oil.jpg') }}"
+                 alt="Valve oil for brass instruments">
+            <h3>Valve Oil</h3>
+            <ul>
+                <p>Oil the valves every few days, or whenever they begin to feel slower than normal, so they continue moving smoothly and respond properly while you are playing.</p>
+                <p>Use only valve oil that is specifically designed for brass instruments, as using unsuitable oils or other substances could damage the valves or affect their performance.</p>
+            </ul>
+            <h3>Slide Grease</h3>
+            <ul>
+                <p>Apply a small amount of slide grease when the slides become stiff or difficult to move, making sure the slides can move smoothly without becoming loose or leaking air.</p>
+            </ul>
+        </div>
+
+        <!-- Cleaning -->
+        <div class="care-card">
+            <h2> Cleaning</h2>
+            <img src="{{ url_for('static', filename='images/cleaning-kit.jpg') }}"
+                 alt="Brass instrument cleaning kit">
+            <h3>Daily</h3>
+            <ul>
+                <p>Remove moisture from the instrument after every playing session to help prevent a buildup of water and reduce the chance of corrosion or other internal problems.</p>
+                <p>Clean the mouthpiece regularly because saliva, dirt, and other particles can build up inside it and affect both hygiene and the quality of your playing.</p>
+            </ul>
+            <h3>Deep Clean</h3>
+            <ul>
+                <p>Give the instrument a thorough wash every few months to remove dirt, oils, and buildup that cannot be removed through normal daily cleaning.</p>
+                <p>Use warm water rather than hot water when cleaning the instrument, because extremely hot water can damage the finish, seals, or other parts of the instrument.</p>
+            </ul>
+        </div>
+
+        <!-- Storage -->
+        <div class="care-card">
+            <h2> Storage</h2>
+            <img src="{{ url_for('static', filename='images/case.jpg') }}"
+                 alt="Brass instrument case">
+            <ul>
+                <p>Keep your instrument safely inside its protective case whenever you are not playing it to protect it from dust, accidental knocks, scratches, and other damage.</p>
+                <p>Avoid storing the instrument in places with extreme heat, cold, or humidity because large changes in temperature and moisture can damage the instrument over time.</p>
+                <p>Do not place heavy objects on top of the instrument case, as excessive weight could damage both the case and the instrument inside it.</p>
+            </ul>
+        </div>
+
+        <!-- Repairs -->
+        <div class="care-card">
+            <h2> Repairs</h2>
+            <ul>
+                <p>Stuck valves can make the instrument difficult to play and should be checked carefully rather than being forced, as excessive pressure could cause further damage.</p>
+                <p>Loose slides can affect the instruments tuning and performance, so they should be checked and adjusted carefully when necessary.</p>
+                <p>Dents in the instrument can affect how easily it plays and may require professional tools and experience to repair correctly.</p>
+                <p>Water key problems can prevent moisture from being removed properly, so damaged or loose water keys should be repaired as soon as possible.</p>
+            </ul>
+            <p>
+                Visit a professional repair technician if a problem cannot be safely fixed yourself, as attempting complicated repairs without the correct tools or knowledge could cause more serious damage.
+            </p>
+        </div>
+
+
+        <!-- Tips -->
+        <div class="care-card">
+            <h2> Top Tips</h2>
+            <ul>
+                <p>Practice regular cleaning habits after every rehearsal or practice session so that dirt, moisture, and fingerprints do not build up and cause problems over time.</p>
+                <p>Keep a small bottle of suitable valve oil with your instrument so you can lubricate the valves whenever they begin to feel stiff or slow.</p>
+                <p>Clean the mouthpiece often to maintain good hygiene and prevent dirt and buildup from affecting the way the instrument plays.</p>
+                <p>Store your instrument safely inside its case after every rehearsal or practice session to protect it from accidental damage and keep it ready for your next use.</p>
+            </ul>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

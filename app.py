@@ -87,5 +87,10 @@ def whybrass():
     return render_template("whybrass.html")
 
 
+@app.route("/care")
+def care():
+    return render_template("care.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

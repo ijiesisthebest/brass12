@@ -92,5 +92,10 @@ def care():
     return render_template("care.html")
 
 
+@app.route("/History")
+def history():
+    return render_template("History.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

@@ -92,9 +92,9 @@ def care():
     return render_template("care.html")
 
 
-@app.route("/History")
+@app.route("/history")
 def history():
-    return render_template("History.html")
+    return render_template("history.html")
 
 
 if __name__ == "__main__":

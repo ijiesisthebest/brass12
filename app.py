@@ -56,6 +56,10 @@ def instrument(id):
     WHERE Instrument.Instrument_ID = ?;
     """
     result = query_db(sql, (id,))
+    
+    if not result:
+        return "Instrument does not exist"
+    
     return render_template("instrument.html", results=result)
 
 
@@ -79,6 +83,10 @@ def model(id):
     WHERE Model.Model_ID = ?;
     """
     result = query_db(sql, (id,), one=True)
+
+    if result is None:
+        return "Model does not exist"
+
     return render_template("model.html", result=result)
 
 

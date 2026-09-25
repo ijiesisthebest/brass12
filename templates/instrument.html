@@ -1,12 +1,18 @@
 <!-- This is for the second page to where you can choose specific models-->
 {% extends "layout.html" %}
 {% block body %}
+<!-- Button that takes the user back to the previous page -->
 <a href="javascript:history.back()" class="back-button"> Back</a>
+<!-- This is so that it is formatted in a specific way -->
 <div class="instrument-grid">
+    <!-- loops through each model in the results list -->
     {% for model in results %}
+    <!-- links each model card to its individual model page -->
     <a href="{{ url_for('model', model_id=model[0]) }}">
         <div class="instrument-card">
+            <!-- shows the brand and model name -->
             <h1>{{ model[1] }} / {{ model[2] }}</h1>
+            <!-- shows the image of that specific model -->
             <img src="{{ model[4] }}" alt="{{ model[3] }}">
         </div>
     </a>

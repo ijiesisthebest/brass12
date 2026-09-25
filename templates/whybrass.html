@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
 <div class="why-layout">
-    <!-- Left and middle -->
+    <!-- Left and middle so that the image is on the middle-ish of the screen and the text is no the left side -->
     <div class="why-content">
         <!-- Introduction -->
         <section id="intro" class="text-section">
@@ -15,13 +15,13 @@
                     Playing brass regularly can also open doors to new experiences and opportunities. As your skills improve, you may be able to join advanced ensembles, compete in competitions, perform at special events, or even earn scholarships. Brass playing is also a great way to express yourself creatively and relieve stress after a busy day. The sense of achievement that comes from mastering a difficult piece or performing confidently in front of an audience makes all the hours of practice worthwhile. Every practice session brings you one step closer to becoming the best musician you can be.
                     </p>
             </div>
-
+            <!-- Why brass img -->
             <div class="brassimg">
                 <img src="https://media.istockphoto.com/id/491962663/photo/details-from-a-showband.jpg?s=612x612&w=0&k=20&c=cpEievD8BCivK94-0aAc7VMXctUJTXYpFbret4XCav8=" alt="Instruments">
             </div>
         </section>
 
-        <!-- What are Brass section -->
+        <!-- What are brass section -->
         <section id="what" class="text-section">
             <div class="text">
                 <h1>What are Brass Instruments?</h1>
@@ -33,12 +33,13 @@
                 Some of the most common brass instruments are the trumpet, trombone, French horn, and tuba. Each instrument has its own unique range and tone, allowing it to play different roles in a band or orchestra. Brass instruments are used in many styles of music, including classical, jazz, marching band, and popular music, making them versatile and exciting instruments to learn and play.
                 </p>
             </div>
+            <!-- What are brass img -->
             <div class="brassimg">
                 <img src="{{ url_for('static', filename='ChatGPT Image Jul 28, 2026, 12_40_01 PM.png') }}" alt="Instruments">
             </div>
         </section>
 
-        <!-- Why Play brass section -->
+        <!-- Why play brass section -->
         <section id="play" class="text-section">
             <div class="text">
                 <h1>Why Play a Brass Instrument?</h1>
@@ -63,13 +64,14 @@
                     </div>
                 </div>
             </div>
+            <!-- Why play brass img -->
             <div class="brassimg">
                 <img src="{{ url_for('static', filename='ChatGPT Image Jul 28, 2026, 12_34_30 PM.png') }}"
                  alt="Instruments">
             </div>
         </section>
 
-        <!-- Journey -->
+        <!-- Journey section -->
         <section id="journey" class="text-section">
             <div class="text">
                 <h1>Start Your Brass Journey</h1>
@@ -81,13 +83,14 @@
                 No matter your age or musical background, it is never too early or too late to begin learning a brass instrument. Every musician starts as a beginner, and each practice session helps you grow in confidence and ability. Taking the first step today could lead to years of enjoyable performances, new friendships, and unforgettable musical experiences.
                 </p>
             </div>
+            <!-- Journey img -->
             <div class="brassimg">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVojZlMEOVySVmaKdvkCBOcmYnT4ifU3-A3QGqk5lBXyrLYz5OuACc-o&s=10" alt="Instruments">
             </div>
         </section>
     </div>
 
-    <!-- the search bar  -->
+    <!-- the search bar so you can find things quicker -->
     <aside class="quick-search">
         <h2>Quick Search</h2>
         <a href="#intro">Why Brass?</a>

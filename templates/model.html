@@ -1,33 +1,40 @@
 {% extends "layout.html" %}
 {% block body %}
-<a href="javascript:history.back()" class="back-button"> Back</a>
+<!-- Button that takes the user back to the previous page -->
+<a href="javascript:history.back()" class="back-button">Back</a>
 <div class="instrument">
     <h1>{{ result[2] }} / {{ result[3] }}</h1>
     <div class="instrument-layout">
         <div class="instrument-image">
             <img src="{{ result[5] }}" alt="{{ result[2] }} {{ result[3] }}">
         </div>
+        <!-- Lets us know what the instrument is -->
         <div class="instrument-details">
             <div class="detail">
                 <h2>Instrument:</h2>
                 <p>{{ result[1] }}</p>
             </div>
+            <!-- Lets us know what brand the instrument is -->
             <div class="detail">
                 <h2>Brand:</h2>
                 <p>{{ result[2] }}</p>
             </div>
+            <!-- Lets us know what model the instrument is -->
             <div class="detail">
                 <h2>Model:</h2>
                 <p>{{ result[3] }}</p>
             </div>
+            <!-- Lets us know the origin of the brand of this instrument -->
             <div class="detail">
                 <h2>Country of Origin:</h2>
                 <p>{{ result[7] }}</p>
             </div>
+            <!-- Lets us know what the price fo this instrument usually is -->
             <div class="detail">
                 <h2>Price:</h2>
                 <p>${{ result[4] }}</p>
             </div>
+            <!-- Gives us a description on this specific model instrument -->
             <div class="detail">
                 <h2>Description:</h2>
                 <p>{{ result[6] }}</p>

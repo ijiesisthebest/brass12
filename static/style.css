@@ -1,11 +1,14 @@
+/* the font for the body and all heading */
 body,h1,h2,h3,h4,h5,h6{
     font-family: serif, sans-serif;
 }
 
+/* default img width*/
 img{
     width: 40%;
 }
 
+/* a two-column grid for instrument cards */
 .instrument-grid{
     display: grid;
     grid-template-columns: repeat(2, 500px);
@@ -14,6 +17,7 @@ img{
     padding: 20px;
 }
 
+/* style for instrument cards */
 .instrument-card{
     background: rgb(255, 255, 255);
     border: 5px solid rgb(119, 119, 119);
@@ -27,6 +31,7 @@ img{
     height: 500px;
 }
 
+/* when hovering over card creates a slight blackout */
 .instrument-card:hover{
     background:#979797;
     transition: 0.3s;
@@ -39,6 +44,7 @@ img{
     margin-top: 10px;
 }
 
+/* darkens the instrument image when the card is hovered over at the same time as the instrument-card:hover */
 .instrument-card:hover img{
     filter: brightness(0.59);
     transition: 0.3s;
@@ -48,6 +54,7 @@ img{
     display: flex;
 }
 
+/* styles and fixes the navbar to the left side of the page */
 .navbar{
     width: 300px;
     min-height: 100vh;
@@ -61,6 +68,7 @@ img{
     left: 0;
 }
 
+/* styles the main title in the navbar */
 .title{
     color: rgb(255, 255, 255);
     padding: 30px;
@@ -68,6 +76,7 @@ img{
     text-align: center;
 }
 
+/* styles the links in the navbar */
 .navbar a{
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -80,20 +89,25 @@ img{
     margin-left: 300px;
 }
 
+/* font size of buttons in the navbar */
 .navbar .w3-button{
     font-size: 28px; 
 }
 
+
+/* ------------------------------------------------------ this part organises everything in the second and third page after home ------------------------------------------------------ */
 .instrument{
     width: 80%;
     margin: auto;
 }
 
+/* centres the heading */
 .instrument h1{
     text-align: center;
     margin-bottom: 40px;
 }
 
+/* the layout for the instrument */
 .instrument-layout{
     display: flex;
     gap: 40px;
@@ -186,7 +200,7 @@ img{
 }
 
 
-/* Sidebar for the why brass */
+/* sidebar for the why brass */
 .quick-search{
     position: sticky;
     top:100px;
@@ -196,7 +210,7 @@ img{
     border-left:3px solid #7c7c7c;
 }
 
-/* Make them individual rather than together */
+/* make them individual rather than together */
 .quick-search a{
     display:block;
     text-decoration:none;
@@ -209,6 +223,7 @@ img{
     color:#008bb6;
 }
 
+/* the "back" button and controls its position */
 .back-button{
     position: relative;
     top: 50px;      /* moves the button down */
@@ -221,6 +236,7 @@ img{
     border-radius: 8px;
 }
 
+/* the color change when hovering over the "back" button */
 .back-button:hover{
     background:#555;
 }
@@ -232,17 +248,20 @@ img{
     margin:auto;
 }
 
+/* styles the page title */
 .care-page h1{
     text-align:center;
     font-size:50px;
 }
 
+/* creates a three-column grid for the cards */
 .care-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
 }
 
+/* styles each card */
 .care-card{
     text-align: center;
     background:white;
@@ -251,6 +270,7 @@ img{
     padding:20px;
 }
 
+/* controls the appearance of images inside the cards */
 .care-card img{
     width:50%;
     height:170px;
@@ -261,6 +281,7 @@ img{
 
 
 /* ------------------------------------------------------ HISTORY ------------------------------------------------------ */
+/* Sets the spacing of the page */
 .history-page{
     width: 90%;
     max-width: 1100px;

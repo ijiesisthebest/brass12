@@ -1,4 +1,4 @@
-"""Flask web application for browsing musical instruments and models."""
+"""Flask web application for browsing musical instruments and models"""
 
 import sqlite3
 from flask import Flask, g, render_template
@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 
 def get_db():
-    """Get the database connection."""
+    """Get the database connection"""
     db = getattr(g, '_database', None)
     if db is None:
         db = g._database = sqlite3.connect(DATABASE)
@@ -27,7 +27,7 @@ def close_connection(_exception):
 
 
 def query_db(query, args=(), one=False):
-    """Run a database query and return the results."""
+    """Run a database query and return the results"""
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
@@ -37,7 +37,7 @@ def query_db(query, args=(), one=False):
 
 @app.route('/')
 def home():
-    """Display the home page with all instruments."""
+    """Display the home page with all instruments"""
     # home page for instruments
     sql = """
           SELECT Instrument_ID, Name, Image
@@ -49,7 +49,7 @@ def home():
 
 @app.route("/instrument/<int:instrument_id>")
 def instrument(instrument_id):
-    """Display models belonging to an instrument."""
+    """Display models belonging to an instrument"""
     sql = """
     SELECT
         Model.Model_ID,
@@ -72,7 +72,7 @@ def instrument(instrument_id):
 
 @app.route("/model/<int:model_id>")
 def model(model_id):
-    """Display details for a specific model."""
+    """Display details for a specific model"""
     sql = """
     SELECT
         Model.Model_ID,
@@ -100,19 +100,19 @@ def model(model_id):
 
 @app.route("/whybrass")
 def whybrass():
-    """Display the why brass page."""
+    """Display the why brass page"""
     return render_template("whybrass.html")
 
 
 @app.route("/care")
 def care():
-    """Display the instrument care page."""
+    """Display the instrument care page"""
     return render_template("care.html")
 
 
 @app.route("/history")
 def history():
-    """Display the history page."""
+    """Display the history page"""
     return render_template("history.html")
 
 
